@@ -42,8 +42,14 @@ import java.util.stream.Collectors;
  * certificates.
  * <p>
  * The entire backbone of this class was taken from the project https://github.com/nandosola/trantor-certificate-verifier
+ * and optimized with some refactor and good practices.
  *
- * @see <a href="https://nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle/">X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle</a>
+ * @author Svetlin Nakov
+ * @author Nando Sola
+ * @author Patrick Louis
+ * @author João Dartora
+ * @see <a href="http://www.nakov.com/blog/2009/12/01/x509-certificate-validation-in-java-build-and-verify-chain-and-verify-clr-with-bouncy-castle">X.509 Certificate Validation in Java: Build and Verify Chain and Verify CLR with Bouncy Castle</a>
+ * @see <a href="http://codeautomate.org/blog/2012/02/certificate-validation-using-java">X.509 Certificate Validation Using Java</a>
  */
 @Service
 public final class CertificateVerifierService {
